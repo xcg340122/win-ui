@@ -1,0 +1,1434 @@
+html,body,div,ul,li,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,button,form,input,textarea,th,td,select {
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+* {
+	box-sizing:border-box;
+}
+a {
+	color:#333;
+	text-decoration:none;
+}
+ol,li {
+	list-style:none;
+}
+button,input,optgroup,option,select,textarea {
+	font-family:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+	outline:0
+}
+textarea {
+	overflow:hidden;
+	resize:none;
+}
+input:focus,textarea:focus {
+	outline:none;
+}
+input::-webkit-search-cancel-button {
+	display:none;
+}
+input[type=search]::-ms-clear {
+	display:none;
+}
+img {
+	border:none;
+	vertical-align:middle;
+}
+table {
+	border-collapse:collapse;
+	table-layout:automatic;
+}
+.win-content {
+	width:1200px;
+	margin:0 auto;
+}
+.win-left {
+	float:left;
+}
+.win-right {
+	float:right;
+}
+.win-clearfix:after {
+	content:'';
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.win-clearfix {
+	*zoom:1;
+}
+.win-hide {
+	display:none !important;
+}
+.win-show {
+	display:block !important;
+}
+.win-inline {
+	display:inline-block !important;
+}
+.win-relative {
+	position:relative;
+}
+.win-absolute {
+	position:absolute;
+}
+.win-mask {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.3);
+	display:none;
+	z-index:998;
+}
+/*文字对齐*/
+
+.win-text-center {
+	text-align:center !important;
+}
+.win-text-justify {
+	text-align:justify !important;
+}
+.win-text-left {
+	text-align:left !important;
+}
+.win-text-right {
+	text-align:right !important;
+}
+/*背景颜色*/
+
+.win-bg-white {
+	background-color:#fff !important;
+}
+.win-bg-blue {
+	background-color:#0e90d2 !important;
+}
+.win-bg-gray {
+	background-color:#f7f7f7 !important;
+}
+.win-bg-warm {
+	background-color:#f78f6b !important;
+}
+.win-bg-purple {
+	background-color:#7266ba !important;
+}
+.win-text-white {
+	color:#fff !important;
+}
+.win-text-warm {
+	color:#f78f6b !important;
+}
+.win-text-purple {
+	color:#7266ba !important;
+}
+/*自动隐藏文字*/
+
+.win-ellipsis {
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/*侧边导航*/
+
+.win-nav {
+	position:relative;
+	padding:0 20px;
+	background-color:#fafafa;
+	color:#333;
+	font-size:0;
+	box-sizing:border-box;
+	box-shadow:0px 3px 10px #ccc;
+}
+.win-nav .win-nav-item,.win-nav .win-nav-right {
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:16px;
+	line-height:60px;
+}
+.win-nav .win-nav-item a {
+	display:block;
+	padding:0 20px;
+	color:#333;
+}
+.win-nav .win-this a {
+	color:#0E90D2;
+}
+.win-nav .win-this:after {
+	content:'';
+	top:100%;
+	width:100%;
+	position:absolute;
+	left:0;
+	height:2px;
+	background-color:#0e90d2;
+}
+.win-nav-right .win-icon-search {
+	color:#999;
+	position:relative;
+	top:3px;
+}
+.win-nav .win-nav-login .win-nav-item a,.win-nav .win-nav-item .win-nav-logined {
+	padding:0 8px;
+}
+.win-nav-logined input {
+	height:30px;
+	padding:3px 10px;
+	border:1px solid #ededed;
+	border-radius:22px;
+}
+.win-nav-logined .win-icon-search {
+	position:absolute;
+	top:0;
+	right:10px;
+}
+.win-nav-tree {
+	width:240px;
+	padding:0;
+	background:#fff;
+	box-shadow:none;
+}
+.win-nav-tree .win-nav-item {
+	display:block;
+	width:100%;
+	line-height:45px;
+}
+.win-nav-tree .win-nav-item:hover {
+	background:#f2f2f2;
+}
+.win-nav-tree .win-this:hover {
+	background:#0e90d2 !important;
+}
+.win-nav-tree .win-nav-itemed:hover {
+	background:#0e90d2 !important;
+}
+.win-nav-itemed>.win-nav-child {
+	display:block;
+	padding:0;
+	background-color:#0583c1;
+}
+.win-nav-tree .win-nav-item a {
+	padding:0 32px;
+}
+.win-nav-tree .win-this:after {
+	height:0;
+}
+.win-nav-tree .win-this {
+	background:#0e90d2;
+}
+.win-nav-tree .win-this a {
+	color:#fff;
+}
+.win-nav-itemed {
+	background:#0e90d2;
+}
+.win-nav-first {
+	background:#0E90D2;
+}
+.win-nav .win-nav-first a {
+	color:#fff;
+}
+.win-nav-first:hover {
+	background:#0E90D2 !important;
+}
+.win-nav-itemed:hover {
+	background:#0E90D2;
+}
+.win-nav-more {
+	position:absolute;
+	top:12px;
+	right:10px;
+	color:#fff;
+}
+.win-nav-item>.win-nav-child {
+	display:block;
+	padding:0;
+	background-color:#0583c3;
+}
+.win-nav-item>.win-nav-child a {
+	color:#fff;
+	padding:0 45px;
+}
+.win-nav-itemed>.win-nav-child dd:hover {
+	background:#0377b2;
+}
+.win-nav-tree .win-nav-child dd.win-this {
+	background:#0488cb;
+}
+/*面包屑*/
+
+.win-breadcrumb {
+	padding:10px;
+	background:#f7f7f7;
+}
+.win-breadcrumb span {
+	margin:0 5px;
+}
+.win-breadcrumb a:last-child {
+	color:#0e90d2;
+}
+.win-breadcrumb a i {
+	position:relative;
+	top:3px;
+	margin-right:3px;
+}
+/*复选框*/
+
+.win-form input[type="checkbox"],.win-form input[type="radio"],.win-form select {
+	display:none;
+}
+.win-form-item .win-form-checkbox {
+	margin-top:12px;
+}
+.win-form-checkbox {
+	display:inline-block;
+	vertical-align:middle;
+	height:auto;
+	line-height:normal;
+	min-width:18px;
+	min-height:18px;
+	border:none;
+	margin-right:0;
+	padding-left:25px;
+	padding-right:0;
+	background:0 0;
+	position:relative;
+	cursor:pointer;
+	font-size:0;
+	box-sizing:border-box;
+}
+.win-form-checkbox-block {
+	width:150px;
+	height:40px;
+	margin-right:5px;
+	text-align:center;
+	border-radius:3px;
+	background:#fff;
+}
+.win-form-checkbox-block:hover {
+	border:1px solid #0E90D2;
+}
+.win-form-checkbox span {
+	padding-left:0;
+	padding-right:15px;
+	line-height:18px;
+	background:0 0;
+	height:100%;
+	font-size:14px;
+	border-radius:2px 0 0 2px;
+	overflow:hidden;
+}
+.win-form-checkbox-block span {
+	line-height:40px;
+	color:#999;
+}
+.win-table .win-form-checkbox span {
+	font-size:16px;
+	padding-right:0;
+}
+.win-form-checkbox .win-icon-ok {
+	position:absolute;
+	left:0;
+	width:18px;
+	height:18px;
+	line-height:16px;
+	border:1px solid #d2d2d2;
+	font-size:16px;
+	text-align:center;
+	color:#fff;
+	border-radius:2px;
+	background:#fff;
+}
+.win-form-checkbox .win-icon-ok:hover {
+	border-color:#0E90D2;
+}
+.win-checkbox-chell span {
+	color:#fff;
+}
+.win-checkbox-chell .win-icon-ok {
+	border:1px solid #fff;
+	background:#0E90D2;
+	color:#0E90D2;
+}
+.win-form-checkbox-block .win-icon-ok {
+	position:absolute;
+	top:17px;
+	left:17px;
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	background:#ccc;
+}
+.win-form-checked .win-icon-ok {
+	border-color:#fff;
+	background:#0e90d2;
+	color:#fff;
+}
+.win-form-checkbox-block.win-form-checked {
+	background:#0E90D2 !important;
+}
+.win-form-checkbox-block.win-form-checked span {
+	color:#fff;
+}
+.win-form-checkbox-block.win-form-checked .win-icon-ok {
+	top:12px;
+	border-color:transparent;
+}
+.win-form-radio {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:28px;
+	margin:5px 10px 0 0;
+	padding-right:10px;
+	cursor:pointer;
+	font-size:14px;
+}
+.win-form-radio>i {
+	display:inline-block;
+	position:relative;
+	top:3px;
+	font-size:24px;
+	color:#cdcdcd;
+}
+.win-form-radio div {
+	display:inline-block;
+}
+.win-form-radioed i {
+	color:#0e90d2;
+}
+/*表格*/
+
+.win-table {
+	width:100%;
+	font-size:16px;
+	color:#333;
+	text-align:left;
+}
+.win-table input[type=text] {
+	border:none;
+	background:transparent;
+}
+.win-table input[type=text]:focus {
+	background:#fff;
+	outline:1px solid #0E90D2;
+}
+.win-table input[type=checkbox] {
+	display:none;
+}
+.win-table th {
+	padding:15px;
+	font-weight:normal;
+	border:1px solid #ededed;
+}
+.win-table td {
+	position:relative;
+	padding:10px 15px;
+	border:1px solid #ededed;
+}
+.win-table tbody tr {
+	cursor:pointer;
+}
+.win-table tbody tr:nth-child(odd) {
+	background:#f7f7f7;
+}
+.win-table tbody tr:hover {
+	background:#eef9ff;
+}
+.win-table .win-edit:hover {
+	color:#0e90d2;
+	text-decoration:underline;
+}
+.win-table .win-delete:hover {
+	color:#ff4242;
+	text-decoration:underline;
+}
+.win-table .win-tag {
+	padding:0 12px;
+	margin:0 5px;
+	height:28px;
+	line-height:28px;
+	color:#999;
+	border:1px solid #ededed;
+	border-radius:28px;
+}
+.win-table-edit {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	padding:0 14px 1px;
+	border-radius:0;
+	box-shadow:1px 1px 20px rgba(0,0,0,.15);
+	display:none;
+}
+.win-table .win-edit {
+	margin:0 5px;
+}
+/*多选带筛选条件表格*/
+
+.win-table-choice .win-icon {
+	font-size:18px;
+}
+/*按钮*/
+
+.win-btn {
+	display:inline-block;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	white-space:nowrap;
+	padding:0 22px;
+	margin:0 8px 10px 0;
+	font-size:14px;
+	color:#fff;
+	background:#0e90d2;
+	border-radius:3px;
+	border:none;
+	outline：0;
+	cursor:pointer;
+}
+.win-btn:hover {
+	opacity:.8;
+	filter:alpha(opacity=80);
+	color:#fff
+}
+.win-btn:active {
+	opacity:1;
+	filter:alpha(opacity=100)
+}
+.win-btn .win-icon {
+	font-size:20px;
+	line-height:38px;
+}
+.win-btn-lg {
+	height:50px;
+	font-size:16px;
+	line-height:50px;
+	padding:0 28px;
+}
+.win-btn-sm {
+	height:30px;
+	line-height:30px;
+	padding:0 18px;
+}
+.win-btn-xs {
+	height:22px;
+	line-height:22px;
+	padding:0 7px;
+}
+.win-btn-radius {
+	border-radius:100px;
+}
+.win-btn-group {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:0;
+}
+.win-btn-group+.win-btn-group {
+	margin-left:10px;
+}
+.win-btn-group .win-btn:first-child {
+	border-left:none;
+	border-radius:3px 0 0 3px;
+}
+.win-btn-group .win-btn:last-child {
+	border-radius:0 3px 3px 0;
+}
+.win-btn-group .win-btn {
+	margin-left:0!important;
+	margin-right:0!important;
+	border-left:1px solid #fff;
+	border-radius:0;
+}
+.win-btn-group .win-btn-primary:first-child {
+	border-left:1px solid #ccc;
+}
+.win-btn-primary {
+	color:#666;
+	background:#fff;
+	border:1px solid #ccc;
+}
+.win-btn-primary:hover {
+	background:f7f7f7;
+	color:#666;
+}
+.win-btn-normal {
+	background:#00c7b3;
+}
+.win-btn-warm {
+	background:#ff9500;
+}
+.win-btn-danger {
+	background:#ff4242;
+}
+.win-btn-disabled,.win-btn-disabled:active,.win-btn-disabled:hover {
+	color:#999;
+	background:#f7f7f7;
+	border:1px solid #ededed;
+	cursor:not-allowed;
+}
+/*表单*/
+
+.win-form-item {
+	margin-bottom:15px;
+	clear:both;
+}
+.win-form-label {
+	float:left;
+	display:block;
+	padding:9px 15px;
+	width:80px;
+	line-height:20px;
+	text-align:right;
+}
+.win-input-block {
+	margin-left:80px;
+	min-height:36px;
+}
+.win-input-inline {
+	display:inline-block;
+	vertical-align:middle;
+}
+.win-form-item .win-input-inline {
+	float:left;
+	width:190px;
+	margin-right:10px;
+}
+.win-input,.win-textarea {
+	display:block;
+	width:100%;
+	padding-left:10px;
+	height:38px;
+	border:1px solid #ccc;
+	background:#fff;
+	border-radius:2px;
+}
+.win-input-hover:hover {
+	box-shadow:0 0 15px #ccc;
+}
+.win-input-click:focus {
+	outline:1px solid #0E90D2;
+}
+.win-textarea {
+	min-height:100px;
+	height:auto;
+	line-height:20px;
+	padding:6px 10px;
+	resize:vertical;
+}
+.win-form-mid {
+	float:left;
+	display:block;
+	padding:9px 0!important;
+	color:#999;
+	line-height:20px;
+	margin-right:10px;
+}
+.win-form-select {
+	position:relative;
+}
+.win-form-select .win-input {
+	padding-right:30px;
+	cursor:pointer;
+}
+.win-form-select .win-icon {
+	position:absolute;
+	right:10px;
+	top:9px;
+	font-size:20px;
+	color:#ccc;
+	cursor:pointer;
+}
+.win-form-selected dl {
+	display:block;
+}
+.win-form-select dl {
+	display:none;
+	position:absolute;
+	left:0;
+	top:42px;
+	padding:5px 0;
+	z-index:899;
+	min-width:100%;
+	border:1px solid #d2d2d2;
+	max-height:300px;
+	overflow-y:auto;
+	background-color:#fff;
+	border-radius:2px;
+	box-shadow:0 2px 4px rgba(0,0,0,.12);
+	box-sizing:border-box;
+}
+.win-form-select dl dd {
+	cursor:pointer;
+}
+.win-form-select dl dt {
+	color:#999;
+}
+.win-form-select .win-select-group dd {
+	padding-left:20px;
+}
+.win-form-select dl dd,.win-form-select dl dt {
+	padding:0 10px;
+	line-height:36px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.win-form-select dl dd:hover {
+	background:#F2F2F2;
+}
+.win-form-select dl dd.win-select-tips {
+	padding-left:10px!important;
+	color:#999;
+}
+.win-form-select dl dd.win-this {
+	background-color:#0e90d2;
+	color:#fff;
+}
+.win-form-switch {
+	position:relative;
+	top:7px;
+	height:22px;
+	line-height:22px;
+	width:45px;
+	margin-right:5px;
+	border:1px solid #ccc;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:#fff;
+	-webkit-transition:.1s linear;
+	transition:.1s linear;
+}
+.win-form-switch em {
+	position:relative;
+	top:-1px;
+	float:right;
+	width:18px;
+	margin-right:3px;
+	padding:0!important;
+	text-align:right;
+	color:#999;
+	font-style:normal!important;
+	font-size:10px;
+}
+.win-form-switch em.win-left {
+	text-align:left;
+	margin-right:0;
+	color:#0E90D2;
+	left:-2px;
+}
+.win-form-switch i {
+	position:absolute;
+	left:0;
+	top:-1px;
+	width:22px;
+	height:22px;
+	text-align:center;
+	line-height:20px;
+	font-size:18px;
+	color:#ccc;
+	border-radius:20px;
+	background-color:#ccc;
+	-webkit-transition:.1s linear;
+	transition:.1s linear;
+}
+.win-form-onswitch i {
+	left:100%;
+	margin-left:-20px;
+	color:#fff;
+	background-color:#0e90d2;
+}
+/*Tab选项卡*/
+
+.win-tab {
+	margin:10px 0;
+	text-align:left!important;
+}
+.win-tab-title {
+	position:relative;
+	left:0;
+	height:40px;
+	white-space:nowrap;
+	font-size:0;
+	border:1px solid #ededed;
+}
+.win-tab-title li {
+	display:inline-block;
+	vertical-align:middle;
+	font-size:14px;
+	position:relative;
+	line-height:38px;
+	min-width:65px;
+	padding:0 15px;
+	text-align:center;
+	border-right:1px solid #ededed;
+	cursor:pointer;
+}
+.win-tab-title li:last-child {
+	border-right:none;
+}
+.win-tab-title li i {
+	font-size:22px;
+	color:#999;
+	position:relative;
+	top:3px;
+	right:3px;
+}
+.win-tab-title .win-this {
+	color:#fff;
+	background:#0e90d2;
+	border-right:none;
+}
+.win-tab-title .win-this i {
+	color:#fff;
+}
+/*带图标上下结构Tab*/
+
+.win-tab-icon .win-tab-title {
+	height:60px;
+	border:none;
+}
+.win-tab-icon .win-tab-title li {
+	height:58px;
+	color:#0e90d2;
+	border-right:none;
+}
+.win-tab-icon .win-tab-title li:before {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	top:10px;
+	right:0;
+	width:1px;
+	height:40px;
+	background:#ededed;
+}
+.win-tab-icon .win-tab-title li:last-child:before {
+	width:0;
+}
+.win-tab-icon .win-tab-title li i {
+	top:6px;
+	display:block;
+	color:#0e90d2;
+}
+.win-tab-icon .win-tab-title .win-this {
+	color:#333;
+	background:#fff;
+	border-right:none;
+}
+.win-tab-icon .win-tab-title .win-this:before {
+	background:#fff;
+}
+.win-tab-icon .win-tab-title .win-this:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	bottom:-10px;
+	left:42%;
+	width:0;
+	height:0 !important;
+	border-color:#fff transparent transparent transparent;
+	border-style:solid;
+	border-width:5px;
+}
+.win-tab-icon .win-tab-title .win-this i {
+	color:#999;
+}
+/*线条箭头*/
+
+.win-tab-line .win-tab-title {
+	border:none;
+	border-bottom:1px solid #ccc;
+}
+.win-tab-line .win-tab-title li {
+	color:#0E90D2;
+	border-right:none;
+}
+.win-tab-line .win-tab-title li i {
+	color:#0E90D2;
+}
+.win-tab-line .win-tab-title .win-this {
+	color:#333;
+	background:none;
+}
+.win-tab-line .win-tab-title .win-this i {
+	color:#999;
+}
+.win-tab-line .win-tab-title .win-this:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	bottom:-17px;
+	left:42%;
+	z-index:1;
+	width:0;
+	height:0 !important;
+	border-color:#ccc transparent transparent transparent;
+	border-style:solid;
+	border-width:8px;
+}
+.win-tab-line .win-tab-title .win-this:before {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	bottom:-15px;
+	left:42%;
+	z-index:2;
+	width:0;
+	height:0 !important;
+	border-color:#f7f7f7 transparent transparent transparent;
+	border-style:solid;
+	border-width:8px;
+}
+/*块状Tab*/
+
+.win-tab-block .win-tab-title,.win-tab-close .win-tab-title {
+	border:none;
+}
+.win-tab-block .win-tab-title .win-this,.win-tab-close .win-tab-title .win-this {
+	/*height:38px;
+	*/
+	color:#0E90D2;
+	border-top:2px solid #0E90D2;
+	background:#fff;
+}
+.win-tab-block .win-tab-title .win-this i {
+	color:#0E90D2;
+}
+/*可关闭Tab选项*/
+
+.win-tab-close .win-tab-title li .win-icon-close {
+	color:#b2b2b2;
+	font-size:14px;
+	position:relative;
+	top:0;
+	left:10px;
+}
+.win-tab-close .win-tab-title .win-this .win-icon-close {
+	color:#b2b2b2;
+}
+.win-tab-item {
+	padding:10px;
+}
+.win-tab-item {
+	display:none;
+}
+/*页码*/
+
+.win-page {
+	display:inline-block;
+	vertical-align:middle;
+	margin:10px 0;
+	font-size:0;
+}
+.win-page a,.win-page span {
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	padding:0 8px;
+	/*width:25px;
+	*/
+	height:25px;
+	line-height:25px;
+	background:#fff;
+	color:#999;
+	font-size:12px;
+	margin-left:-1px;
+	border:1px solid #ededed;
+}
+.win-page a:first-child {
+	margin-left:0;
+}
+.win-page a:hover {
+	z-index:2;
+	border-color:#0E90D2;
+}
+.win-page a i {
+	font-size:12px;
+}
+.win-page span.win-page-curr {
+	z-index:2;
+	color:#fff;
+	background:#0e90d2;
+	border-color:#0E90D2;
+}
+.win-page a.win-page-disabled {
+	color:#ededed;
+	cursor:not-allowed;
+}
+.win-page a.win-page-disabled:hover {
+	border-color:#ededed;
+}
+.win-page.win-page-sm a,.win-page.win-page-sm span {
+	padding:0 5px;
+	height:20px;
+	line-height:20px;
+}
+.win-page.win-page-lg a,.win-page.win-page-lg span {
+	padding:0 10px;
+	height:28px;
+	line-height:28px;
+}
+.win-page-count,.win-page-skip {
+	font-size:12px;
+	color:#999;
+	margin:0 5px;
+}
+.win-page .win-page-skip {
+	border:none;
+	background:transparent;
+}
+.win-page .win-input {
+	display:inline-block;
+	padding:0;
+	width:48px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	margin:0 5px;
+	outline:0;
+}
+.win-page .win-jump-btn:hover {
+	border-color:#ededed;
+}
+/*进度条*/
+
+.win-progress {
+	position:relative;
+	height:14px;
+	margin:10px 0;
+	border-radius:30px;
+	background-color:#fff;
+}
+.win-progress-sm {
+	height:8px;
+}
+.win-progress-lg {
+	height:24px;
+}
+.win-progress-bar {
+	position:absolute;
+	left:0;
+	width:0;
+	max-width:100%;
+	height:100%;
+	border-radius:50px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	background-color:#23b7e5;
+	transition:all 2s linear;
+	-webkit-transition:all 2s linear;
+}
+.win-progress-round {
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}
+.win-progress-text {
+	opacity:0;
+	position:absolute;
+	top:-2px;
+	font-size:14px;
+	color:#23b7e5;
+	margin-left:5px;
+	transition:all .2s 2.4s;
+	-webkit-transition:all .2s 2.4s;
+}
+.win-progress-sm .win-progress-text {
+	top:-5px;
+}
+.win-progress-lg .win-progress-text {
+	top:3px;
+}
+.win-progress-suspen .win-progress-text {
+	display:none;
+	color:#fff;
+	padding:0 3px;
+	top:-24px;
+	margin-left:-17px;
+	background:rgba(0,0,0,0.5);
+	border-radius:3px;
+}
+.win-progress-suspen .win-progress-text:after {
+	content:'';
+	display:inline-block;
+	position:absolute;
+	bottom:-10px;
+	left:35%;
+	z-index:2;
+	width:0;
+	height:0 !important;
+	border-color:rgba(0,0,0,0.5) transparent transparent transparent;
+	border-style:solid;
+	border-width:5px;
+}
+.win-progress-suspen:hover .win-progress-text {
+	display:block;
+}
+.win-progress-drag .win-progress-bar {
+	transition:all 0s;
+	-webkit-transition:all 0s;
+}
+.win-progress-circle-btn,.win-progress-step {
+	position:absolute;
+	top:-3px;
+	margin-left:-3px;
+	width:20px;
+	height:20px;
+	background:#fff;
+	border-radius:50%;
+	box-shadow:0 0 5px #ccc;
+	cursor:pointer;
+}
+.win-progress-step {
+	width:0;
+	height:0;
+	border:10px solid #ededed;
+	transition:all .2s;
+	-webkit-transition:all .2s;
+}
+.win-progress-step:last-child {
+	right:-3px;
+	transition:all 3.5s .1s;
+	-webkit-transition:all 3.5s .1s;
+}
+.win-progress-step1 {
+	position:absolute;
+	top:-3px;
+	width:20px;
+	height:20px;
+	background:#fff;
+	border-radius:50%;
+	border:5px solid #ededed;
+}
+.win-progress span:nth-of-type(2) {
+	left:20%;
+	transition:all .8s .6s;
+	-webkit-transition:all .8s .6s;
+}
+.win-progress span:nth-of-type(3) {
+	left:40%;
+	transition:all 1.4s .6s;
+	-webkit-transition:all 1.4s .6s;
+}
+.win-progress span:nth-of-type(4) {
+	left:60%;
+	transition:all 2.0s .6s;
+	-webkit-transition:all 2.0s .6s;
+}
+.win-progress span:nth-of-type(5) {
+	left:80%;
+	transition:all 2.6s .6s;
+	-webkit-transition:all 2.6s .6s;
+}
+.win-progress-circle {
+	width:110px;
+	height:110px;
+	position:relative;
+	border-radius:50%;
+	background:#23b7e5;
+}
+/*.win-progress-circle .win-progress-bar {
+	width:102px;
+	height:102px;
+	top:4px;
+	left:4px;
+	background:#fff;
+	border-radius:50%;
+	border:4px solid #023b7e5;
+}
+*/
+
+.win-pie-left,.win-pie-right {
+	width:110px;
+	height:110px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.win-pie-circle-left,.win-pie-circle-right {
+	width:110px;
+	height:110px;
+	background:#ededed;
+	border-radius:50%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.win-pie-right,.win-pie-circle-right {
+	clip:rect(0,auto,auto,55px);
+}
+.win-pie-left,.win-pie-circle-left {
+	clip:rect(0,55px,auto,0);
+}
+.win-pie-mask {
+	width:102px;
+	height:102px;
+	border-radius:50%;
+	left:4px;
+	top:4px;
+	background:#FFF;
+	position:absolute;
+	text-align:center;
+	line-height:102px;
+	font-size:20px;
+	font-weight:bold;
+	color:#999;
+}
+.win-progress-circle-sm .win-pie-mask {
+	width:106px;
+	height:106px;
+	top:2px;
+	left:2px;
+	line-height:106px;
+}
+.win-progress-circle-lg .win-pie-mask {
+	width:98px;
+	height:98px;
+	top:6px;
+	left:6px;
+	line-height:98px;
+}
+/*面板卡*/
+
+.win-card {
+	width:480px;
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	margin:0 10px 15px 0;
+	border:1px solid #dedede;
+	box-shadow:0 0 5px #e9e8e8;
+}
+.win-card-left {
+	width:130px;
+	height:78px;
+	text-align:center;
+	line-height:78px;
+	border-right:1px solid #ededed;
+}
+.win-card-right {
+	padding:0 10px;
+	margin-left:130px;
+}
+.win-card-header {
+	color:#333;
+	font-size:16px;
+}
+.win-card-content {
+	color:#999;
+	font-size:12px;
+	line-height:24px;
+	margin-top:8px;
+}
+.win-card-sm {
+	width:150px;
+	text-align:center;
+}
+.win-card-sm .win-icon-rate-solid {
+	position:relative;
+	top:-3px;
+	color:#ffde00;
+}
+.win-card-sm .win-card-header img {
+	position:relative;
+	top:-8px;
+}
+.win-card-sm .win-card-header span {
+	font-size:28px;
+	color:#666;
+}
+.win-card-sm .win-card-content {
+	color:#666;
+	font-size:14px;
+}
+.win-collapse {
+	border:1px solid #ededed;
+}
+.win-colla-item {
+	border-top:1px solid #ededed;
+}
+.win-colla-item:first-child {
+	border-top:none;
+}
+.win-colla-title {
+	position:relative;
+	height:42px;
+	line-height:42px;
+	padding:0 15px 0 35px;
+	color:#333;
+	background-color:#f7f7f7;
+	cursor:pointer;
+	font-size:18px;
+	overflow:hidden;
+}
+.win-colla-title i {
+	position:absolute;
+	left:10px;
+	top:0;
+	line-height:42px;
+	color:#999;
+	font-size:20px;
+}
+.win-colla-content {
+	padding:10px;
+	line-height:22px;
+	font-size:14px;
+	color:#666;
+	border-top:1px solid #ededed;
+}
+.win-collapse-cross .win-colla-item {
+	float:left;
+	width:150px;
+	height:346px;
+	border-top:none;
+	cursor:pointer;
+}
+.win-collapse-cross .win-colla-item:hover .win-colla-content {
+	background:#f2f2f2;
+}
+.win-collapse-cross .win-colla-active {
+	width:300px;
+	box-shadow:0 0 15px #dedede;
+}
+.win-collapse-cross .win-colla-active .win-colla-content {
+	background:#fff;
+}
+.win-collapse-cross .win-colla-title {
+	padding:5px 10px;
+	height:100px;
+	line-height:26px;
+	color:#fff;
+	text-align:center;
+	background:#0e90d2;
+}
+.win-collapse-cross .win-colla-title i {
+	position:static;
+	line-height:26px;
+	font-size:20px;
+	color:#fff;
+	/*margin-top:5px;
+	*/
+}
+.win-collapse-cross .win-colla-title h1 {
+	font-size:18px;
+	font-weight:normal;
+}
+.win-collapse-cross .win-colla-title p {
+	font-size:14px;
+}
+.win-collapse-cross .win-colla-content {
+	height:246px;
+	background:#f7f7f7;
+}
+.win-collapse-cross .win-colla-content h1 {
+	font-size:18px;
+	color:#666;
+	font-weight:normal;
+	margin-top:20px;
+}
+@font-face {
+	font-family:win-icon;
+	font-weight:normal;
+	font-style:normal;
+	src:url('../font/win.ttf') format('truetype');
+}
+.win-icon {
+	font-family:win-icon;
+	font-size:24px;
+	font-weight:normal;
+	font-style:normal;
+	line-height:1;
+	display:inline-block;
+	text-decoration:none;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.win-icon-down:before {
+	content:"\e600";
+}
+.win-icon-up:before {
+	content:"\e601";
+}
+.win-icon-left:before {
+	content:"\e602";
+}
+.win-icon-right:before {
+	content:"\e603";
+}
+.win-icon-triangle-d:before {
+	content:"\e604";
+}
+.win-icon-triangle-t:before {
+	content:"\e605";
+}
+.win-icon-edit:before {
+	content:"\e8b4";
+}
+.win-icon-delete:before {
+	content:"\e645";
+}
+.win-icon-ok:before {
+	content:"\e616";
+}
+.win-icon-list:before {
+	content:"\e60a";
+}
+.win-icon-pause:before {
+	content:"\e63d";
+}
+.win-icon-edit:before {
+	content:"\e8b4";
+}
+.win-icon-share:before {
+	content:"\e63f";
+}
+.win-icon-paly:before {
+	content:"\e6ce";
+}
+.win-icon-home:before {
+	content:"\e61c";
+}
+.win-icon-file:before {
+	content:"\e66b";
+}
+.win-icon-search:before {
+	content:"\e625";
+}
+.win-icon-details:before {
+	content:"\e61d";
+}
+.win-icon-empty-circle:before {
+	content:"\e609";
+}
+.win-icon-add-circle:before {
+	content:"\e607";
+}
+.win-icon-close:before {
+	content:"\e608";
+}
+.win-icon-nav:before {
+	content:"\e613";
+}
+.win-icon-export:before {
+	content:"\e793";
+}
+.win-icon-radio:before {
+	content:"\e6b1";
+}
+.win-icon-safety:before {
+	content:"\e606";
+}
+.win-icon-prev:before {
+	content:"\e8b5";
+}
+.win-icon-next:before {
+	content:"\e6b6";
+}
+.win-icon-rate-solid:before {
+	content:"\e60b";
+}
