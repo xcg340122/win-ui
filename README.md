@@ -2,7 +2,8 @@
 > 
 [点击下载组件](https://github.com/xcg340122/win-ui/releases)
 *****
-本组件依赖[jquery框架(版本>=3.0)](https://baike.baidu.com/item/jQuery/5385065?fr=aladdin)，[JqueryCDN快速入口](组件依赖[jquery框架(版本>=3.0)](https://baike.baidu.com/item/jQuery/5385065?fr=aladdin))
+本组件依赖[jquery框架(版本>=3.0)](https://baike.baidu.com/item/jQuery/5385065?fr=aladdin)
+[JqueryCDN快速入口](组件依赖[jquery框架(版本>=3.0)](https://baike.baidu.com/item/jQuery/5385065?fr=aladdin))
 *****
 首先我们需要引入`WINUI`的核心`css`文件：
 ```
